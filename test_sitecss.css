@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quintessential');
+
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+	background-color: LemonChiffon;
+}
+@font-face {
+	font-family: "Soria";
+	src: url(https://renaissanceboatman.com/Soria_font.tff) format("truetype");
+}
+
+.container{
+}
+
+.headbar{
+	z-index: 1;
+	background-image: url("venice.jpg");
+	background-size: cover;
+	width: 100%;
+	left: 0;
+	top:5%;
+}
+
+.title{
+	font-family: "Soria", cursive;
+	height: 10%;
+	margin-left: 27.5%;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 1.75;
+}
+
+.main{
+	margin-left: 25%;
+	padding-left: 2.5%;
+	padding-right: 10%;
+	width: 62.5%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: BlanchedAlmond;
+
+}
+
+.sidebar_wrapper{
+	min-width: 20%;
+	width: 20%;
+	height: 100%;
+	margin-left: 2.5%;
+}
+.sidebar{
+	margin-top: 2.5%;
+	width: inherit;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar img{
+	position: relative;
+	display: block;
+		max-width: 100%;
+		height: auto;
+		border: 1px solid #000;
+		border-radius: 7px;
+		transition: opacity ease-out 250ms;
+		opacity: 1;
+		margin-bottom: 5%;
+}
+
+.sidebar img:hover{
+	opacity: 0.5;
+}
+
+.sidebar .button{
+	border: 1px #FFF solid;
+	padding: 10px;
+	border-radius: 7px;
+	font: 20px "Helvetica", sans-serif;
+	font-style: italic;
+	color: #000;
+	text-align: center;
+}
+
+.sidebar_link_box{
+	flex: 1;
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+
+}
+
+.button{
+	text-decoration: none;
+}
+
+.contact_page{
+	width: inherit;
+	height: 100%;
+}
+
+.contact_menu{
+	position: relative;
+	display: table;
+	flex-direction: column;
+}
+p{
+	font-size: 1em;
+	font-family: 'Quattrocento Sans', sans-serif;
+	text-indent: 5em;
+	display: inline-block;
+}
+
+.contact_button {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+.main img{
+	width: 481px;
+	float: right;
+}
+
+
+
+h3{
+	font-family: 'Quattrocento', serif;
+	font-size: 1.5em;
+}
+
+#fiy{
+	text-align: center;
+	text-overflow: clip;
+}
+
+
+#about{
+	flex:1;
+	order:1;
+
+	background-color: #ff4d4d;
+	position: relative;
+	transition: background-color 0.5s ease;
+}
+
+#about:hover{
+	background-color: #ff0000;
+}
+
+#contact{
+	flex:1;
+	order:2;
+	background-color: #ff704d;
+	transition: background-color 0.5s ease;
+}
+#contact:hover{
+	background-color: #ff3300;
+}
+
+#archive{
+	flex:1;
+	order: 3;
+	background-color: #ff944d;
+	transition: background-color 0.5s ease;
+}
+
+#archive:hover{
+	background-color: #FF6600;
+}
